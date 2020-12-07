@@ -1,0 +1,278 @@
+/* основной цвет, заголовки  #212121 */
+/* вторичный цвет, абзацы #757575 */
+/* цвет ссылки при наведении, акцент  #2196F3 */
+/* футер-почта-номер  rgba(255, 255, 255, 0.6) */
+/* футер-адрес #FFFFFF*/
+/* фон бекграунд #2F303A */
+/* цвет фона блока наша команда #F5F4FA */
+
+
+:root {
+    --title-text-color:  #212121;
+    --primary-text-color: #757575;
+    --accent-color: #2196F3;
+    --white-color: #FFFFFF;
+    --footer-color: rgba(255, 255, 255, 0.6);
+    --portfolio-item: #EEEEEE;
+    --main-bcg: #2F303A; 
+  
+  }
+
+  body {
+    font-family: Roboto,sans-serif;
+    color: var(--primary-text-color);
+    /* background-color: #E5E5E5; */
+    text-decoration: none;
+    font-size: 14px;
+    font-style: normal;
+    /* width: 1600px; */
+  } 
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* title */
+.title {
+    color: var(--title-text-color);
+  }
+
+  .list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  /* container */
+.container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  /* ссылки */
+  a:hover,
+  a:focus {
+    color: var(--accent-color);
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--title-text-color);
+  }
+  /* logo */
+  .logo {
+      color: var(--accent-color);
+      font-family: Raleway,sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 1.19;  
+    }
+  
+    .header-logo {
+      margin-top: 24px;
+      margin-bottom: 25px;
+      margin-right: 93px;
+    }
+
+  .logo-secondary {
+    color: var(--white-color);
+  } 
+  
+  
+  /* header */
+  .header {
+    background-color: #fff;
+    margin-bottom: 94px;
+  }
+
+  /* navigation */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+}
+
+/* .site-nav .item+.item {
+  margin-left: 50px;
+} */
+
+ .site-nav:hover,
+ .site-nav:focus {
+   color: var(--accent-color);
+   
+ }
+.site-nav .link,
+.auth-nav .link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+ }
+.item {
+  margin-right: 50px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.item:last-child {
+  margin-right: 0;
+}
+ .auth-nav {
+   display: flex;
+   margin-left: auto;
+ }
+ .auth-nav .link {
+  color: var(--primary-text-color);
+}
+ 
+ .auth-nav .link:hover,
+ .auth-nav .link:focus {
+  color: var(--accent-color);
+ }
+
+  /* button  кнопки*/
+ .btn {
+   display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 162%;
+    letter-spacing: 0.03em;
+    padding: 6px 22px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    min-width: 73px;
+  }
+  .buttons-list:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .btn:hover,
+  .btn:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    outline: none;
+  }
+ 
+  /* скрытый заголовок */
+.h2-invis {
+  display: none;
+}
+ 
+/* projects  элементы списка*/
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+  .buttons-list {
+    margin-bottom: 50px;
+  }
+  .projects img {
+    margin-bottom: 20px;
+    display: block;
+  }
+   .projects {
+     display: flex;
+     flex-wrap: wrap;
+   }
+   .projects-list {
+     margin-right: 30px;
+   }
+   .projects-list:nth-child(3n) {
+     margin-right: 0;
+   }
+   .projects-list .title, 
+   .projects-list .portfolio-jobs {
+     margin-left: 24px;
+   }
+
+   /* calc((100% - кол-во маржинов в строке*значение маржина)/кол-во элементов в строке */
+   /* .projects .item {
+     width: calc((100%-60px) / 3);
+     margin-right: 30px;
+   }
+   .projects .item:nth-child(3n) {
+     margin-right: 0;
+   } */
+
+   .projects-list {
+     display: block;
+     width: 370px;
+     margin-right: 30px; 
+     margin-bottom: 30px;
+     border: 1px solid var(--portfolio-item);
+     box-sizing: border-box;
+    }
+   .projects-list:nth-last-child(-n + 3) {
+     margin-bottom: 0;
+   }
+
+   /* альтернатива
+   .projects .item:not(:nth-child(3n)) {
+     margin-right: 30px;
+   }
+   .projects .item:not(:nth-last-child(-n + 3)) {
+     margin-bottom: 30px;
+   } */
+.projects .title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+}
+
+
+.projects .portfolio-jobs {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+}
+    
+/* main */
+main {
+  margin-bottom: 94px;
+}
+ /* footer */
+ .footer {
+  background-color: var(--main-bcg);
+    
+}
+.logo-footer {
+  margin-bottom: 20px;
+}
+.logo-div {
+  margin-bottom: 20px;
+}
+
+.footer .link {
+  color: var(--footer-color);
+}
+.footer-p {
+  margin-bottom: 9px;
+  color: var(--white-color);
+}
+.footer-p:last-child {
+  padding-bottom: 60px;
+}
+.footer .link:hover,
+.footer .link:focus {
+  color: var(--accent-color);
+}
+.logo-footer.container {
+  padding-top: 60px;
+  padding-bottom: 0;
+
+}
