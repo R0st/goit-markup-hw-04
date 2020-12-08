@@ -159,7 +159,12 @@ a {
    margin-left: auto;
    color: var(--primary-text-color);
  }
- 
+ .item .link {
+   display: flex;
+   align-content: center;
+   justify-content: center;
+ }
+
   .auth-nav .link {
   color: var(--primary-text-color);
 }
@@ -263,6 +268,17 @@ a {
 .h2-invis {
   display: none;
 }
+.title-post {
+  font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+margin-bottom: 50px;
+color: #212121;
+}
 
  /* наши работы */
  .our-jobs {
@@ -276,14 +292,14 @@ a {
     letter-spacing: 0.03em;
  }
 
- .pictures {
+ .picture {
    display: flex;
  }
- .pictures  img {
+ .picture  img {
     margin-right: 30px;
     display: block;
  } 
-  .pictures img:last-child {
+  .picture img:last-child {
      margin-right: 0;
  }
 
@@ -384,44 +400,54 @@ a {
  }
  
 .workers-prof {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
+}
+.social-list {
+  display: flex;
+  margin: 0px 32px 30px;
+}
+.social-icon:not(:last-child) {
+  margin-right: 10px;
 }
 .social-icon {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.instagram-icon, 
-.twitter-icon,
-.facebook-icon,
-.linkedin-icon {
-  height: 20px;
-  width: 20px;
-  background-color: var(--white-color);
-  display: flex;
-  padding: 12px;
-  margin-right: 10px;
+  display: block;
   justify-content: center;
+  align-items: center;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.logo-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
   fill: var(--color-socseti);
 }
-
-.instagram-icon:hover,
-.instagram-icon:focus,
-.twitter-icon:hover,
-.twitter-icon:focus,
-.facebook-icon:hover,
-.facebook-icon:focus,
-.linkedin-icon:hover,
-.linkedin-icon:focus {
-  border-radius: 50%;
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent-color);
+}
+.social-link:hover .logo-icon,
+.social-link:focus .logo-icon {
   fill: var(--white-color);
 }
-
-.footer-social .instagram-icon,
-.footer-social .twitter-icon,
-.facebook-icon .linkedin-icon,
-.footer-social .facebook-icon {
+.footer-social .social-list {
+  padding: 0;
+  margin: 0;
+}
+.footer-social .social-link {
+  background-color:  var(--primary-text-color);
+}
+.footer-social .logo-icon {
+  fill: var(--white-color);
+}
+.footer-social .social-link:hover,
+.footer-social .social-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -526,6 +552,9 @@ a {
 .logo-6:hover,
 .logo-6:focus {
   fill: var(--accent-color);
+}
+.client:hover {
+  border-color: var(--accent-color);
 }
 
 
