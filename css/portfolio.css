@@ -142,8 +142,6 @@
 
 .item.envelope,
 .item.vector {
-  display: flex;
-  align-items: center;
   fill: var(--primary-text-color);
 
 }
@@ -158,8 +156,7 @@
  }
  .item .link {
   display: flex;
-  align-content: center;
-  justify-content: center;
+  align-items: center;
 }
 
  
@@ -221,18 +218,21 @@
    .projects {
      display: flex;
      flex-wrap: wrap;
+     /* margin-bottom: 94px; */
    }
    .projects-list {
      margin-right: 30px;
    }
    .projects-list:nth-child(3n) {
      margin-right: 0;
+    
    }
    .projects-list .title, 
    .projects-list .portfolio-jobs {
      margin-left: 24px;
    }
-   .projects-list:hover {
+   .projects-list:hover,
+   .projects-list:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
    }
    /* calc((100% - кол-во маржинов в строке*значение маржина)/кол-во элементов в строке */
@@ -249,11 +249,15 @@
      width: 370px;
      margin-right: 30px; 
      margin-bottom: 30px;
-     border: 1px solid var(--portfolio-item);
+     border-right: 1px solid var(--portfolio-item);
+     border-bottom: 1px solid var(--portfolio-item);
+     border-left: 1px solid var(--portfolio-item);
      box-sizing: border-box;
+     cursor: pointer;
     }
    .projects-list:nth-last-child(-n + 3) {
      margin-bottom: 0;
+     margin-bottom: 94px;
    }
 
    /* альтернатива
@@ -280,10 +284,6 @@
     margin-bottom: 20px;
 }
     
-/* main */
-main {
-  margin-bottom: 94px;
-}
  /* footer */
  .footer {
   background-color: var(--main-bcg);
