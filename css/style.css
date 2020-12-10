@@ -289,7 +289,9 @@ a {
      margin-right: 0;
  }
 
-
+.title.works {
+  margin-bottom: 10px;
+}
 .features {
   display: flex;
   flex-wrap: wrap;
@@ -311,7 +313,6 @@ a {
  }
  .features-list {
    margin-right: 30px;
-   margin-bottom: 94px;
    width: 270px;
  }
  .features-list:last-child {
@@ -521,10 +522,12 @@ a {
   fill: var(--color-socseti);
 }
 
-.client:hover .logo {
+.client:hover .logo,
+.client:focus .logo  {
   fill: var(--accent-color)
 }
-.client:hover {
+.client:hover,
+.client:focus {
   border-color: var(--accent-color);
 }
 
