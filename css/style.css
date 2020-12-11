@@ -124,8 +124,8 @@ a {
 
  .item {
   margin-right: 50px;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .envelope-icon {
   padding: 0;
@@ -201,7 +201,6 @@ a {
  .hero-page {
    /* background-color: var(--main-bcg);  */
    max-width: 1600px;
-   height: 600px;
    margin-left: auto;
    margin-right: auto;
    background-color: var(--color-bcg-hero);
@@ -214,7 +213,8 @@ a {
    background-repeat: no-repeat;
    background-position: center;
    text-align: center;
-   margin-bottom: 94px;
+   padding-bottom: 200px;
+   padding-top: 200px;
  }
 
  .hero {
@@ -224,8 +224,7 @@ a {
   color: var(--white-color);
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 40px;
-  padding-top: 200px;
+  padding-bottom: 30px;
  }
 
 
@@ -236,7 +235,6 @@ a {
    border-radius: 4px;
    border: 1px solid transparent;
    width: 200px;
-   margin-bottom: 200px;
    height: 50px;
    display: inline-block;
    box-sizing: border-box;
@@ -267,7 +265,9 @@ a {
 
  /* наши работы */
  .our-jobs {
+   padding-top: 94px;
    padding-bottom: 94px;
+
  }
  .jobs-img .title,
  .team > h2 {
@@ -279,7 +279,6 @@ a {
 
  .pictures {
    display: flex;
-   padding-bottom: 94px;
  }
  .pictures  img {
     margin-right: 30px;
@@ -358,6 +357,10 @@ a {
   background-image: url(/images/decoration/astronaut.svg);
  } */
  
+/* чем мы занимаемся */
+.container.jobs-img {
+  padding-bottom: 94px;
+}
  .title.h2 {
     font-family: Roboto;
     font-style: normal;
@@ -368,15 +371,14 @@ a {
     letter-spacing: 0.03em;
     margin-bottom: 50px;
     color: var(--title-text-color);
-    padding-top: 94px;
-  }
  }
 
  
  /* наша команда */
- .our-team {
-   padding-top: 94px;
-   padding-bottom: 94px;
+ .container.our-team {
+  background-color: var(--bcg-our-team);
+  padding-top: 94px;
+  padding-bottom: 94px;
  }
  .team-list {
   background-color: var(--white-color);
@@ -405,7 +407,7 @@ a {
 }
 .social-list {
   display: flex;
-  margin: 0px 32px 30px;
+  padding: 0 32px 30px;
 }
 .social-icon:not(:last-child) {
   margin-right: 10px;
@@ -493,10 +495,12 @@ a {
 } */
 
 /* clients */
+.static-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .clients-list {
   display: flex;
-  margin-bottom: 94px;
-  /* justify-content: center; */
 }
 .client {
   width: 170px;
@@ -526,15 +530,20 @@ a {
 .client:focus .logo  {
   fill: var(--accent-color)
 }
-.client:hover,
-.client:focus {
+
+  .client:hover,
+  .client:focus {
   border-color: var(--accent-color);
 }
+
 
 
  /* footer */
  .footer {
   background-color: var(--main-bcg);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  
     
 }
 .logo-footer {
@@ -549,10 +558,8 @@ a {
 .footer-p {
   margin-bottom: 9px;
   color: var(--white-color);
-  margin-right: 70px;
 }
 .footer-p:last-child {
-  padding-bottom: 60px;
   margin-bottom: 0;
 }
 .footer .link:hover,
@@ -561,9 +568,9 @@ a {
 }
  /* .logo-footer.container  */
 .footer-block {
-  padding-top: 60px;
   padding-bottom: 0;
   margin-bottom: 0;
+  margin-right: 70px;
 }
 .footer-h3 {
   font-size: 14px;
@@ -572,9 +579,7 @@ a {
   text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 20px;
-}
-.footer-social {
-  padding-top: 72px;
+  padding-top: 12px;
 }
 .footer-social .social-icon {
   margin-bottom: 0;
